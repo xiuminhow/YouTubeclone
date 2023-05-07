@@ -1,0 +1,97 @@
+      body {
+        margin: 0;
+        background-color: rgba(249, 246, 246, 0.999);
+      }
+
+      .video-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 40px;
+        padding-top: 80px;
+        padding-bottom: 1000px;
+        padding-left: 95px;
+        padding-right: 25px;
+      }
+
+      @media (max-width:750px) {
+        .video-row {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (min-width:1000px) {
+        .video-row {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+
+      .lower-section {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        margin-top: 10px;
+      }
+      .thumbnail {
+        width: 100%;
+      }
+      .thumbnail-row {
+        position: relative;
+      }
+      .channel-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        margin-right: 10px;
+      }
+      .video-info {
+        font-family: Arial;
+      }
+      p {
+        margin: 0;
+      }
+      .video-title {
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      @media (min-width:1000px) {
+        .video-title {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      .video-link {
+        text-decoration: none;
+        color: black;
+      }
+      .video-author, .video-stats {
+        font-size: 12px;
+        color: gray;
+      }
+
+      @media (min-width:1000px) {
+        .video-author, .video-stats {
+          font-size: 14px;
+        }
+      }
+      .video-author {
+        margin-bottom: 5px;
+      }
+      .time-duration {
+        background-color: black;
+        color: white;
+        position: absolute;
+        right: 5px;
+        bottom: 8px;
+        font-family: Arial;
+        font-size: 12px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        padding-right: 4px;
+        font-weight: 500;
+        border-radius: 2px;
+      }

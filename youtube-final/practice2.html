@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        height: 1000px;
+      }
+      .left-bar {
+        position: fixed;
+        background-color: lightblue;
+        top: 0;
+        bottom: 0;
+        width: 100px;
+        left: 0;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .group-1 {
+        transition: background-color 0.15s;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+      }
+      img {
+        height: 30px;
+        width: 30px;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .group-1:hover {
+        background-color: gray;
+      }
+      .cross-mark {
+        position: absolute;
+        right: 0;
+        top:0;
+        right: 0;
+        background-color: black;
+        color: white;
+        padding-top: 2px;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-bottom: 2px;
+        font-size: 12px;
+        cursor: pointer;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="left-bar">
+        <div class="group-1">
+          <img src="images/home.svg">
+          <p> Home </p>
+        </div>
+  
+        <div class="group-1">
+          <img src="images/home.svg">
+          <p> Home </p>
+        </div>
+
+        <div class="group-1">
+          <img src="images/home.svg">
+          <p> Home </p>
+        </div>
+      
+        <div class="cross-mark">x</div>
+      
+    </div>
+  </body>
+</html>

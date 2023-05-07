@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        height: 1000px;
+      }
+      .left-bar {
+        position: fixed;
+        background-color: lightblue;
+        top: 0;
+        bottom: 0;
+        width: 100px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .group {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        background-color: lightpink;
+      }
+      .group-1 {
+        transition: background-color 0.15s;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+      }
+      .group img {
+        height: 30px;
+        width: 30px;
+      }
+      .group p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .group-1:hover {
+        background-color: gray;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="left-bar">
+      <div class="group">
+        <div class="group-1">
+          <img src="images/home.svg">
+          <p> Home </p>
+        </div>
+  
+        <div class="group-1">
+          <img src="images/home.svg">
+          <p> Home </p>
+        </div>
+
+        <div class="group-1">
+          <img src="images/home.svg">
+          <p> Home </p>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

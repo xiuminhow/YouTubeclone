@@ -1,0 +1,42 @@
+.channel-image-container {
+  position: relative;
+}
+.hover-box {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: -50px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 1px 1px 10px rgb(231, 226, 226);
+  z-index: 400;
+  background-color: white;
+  border-radius: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 150px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+.channel-image-container:hover .hover-box {
+  opacity: 1;
+}
+.hover-box .channel-image{
+  width: 30px;
+  height: 30px;
+}
+.hover-info{
+  font-size: 10px;
+  font-family: Arial;
+}
+.hover-info .author{
+  font-weight: bold;
+}
+.hover-info .subs{
+  color: gray;
+  font-size: 8px;
+  font-weight: 300;
+  margin-top: 2px;
+}
